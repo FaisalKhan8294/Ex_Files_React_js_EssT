@@ -15,38 +15,46 @@
   </head>
   <body>
     <div id="root"></div>
-
+     
     <script type="text/babel">
-      function Header() {
+      function Header(){
         return (
-          <header>
-            <h1>Eve's Kitchen</h1>
+        <header>
+          <h1>I am Khan</h1>
           </header>
         );
       }
-      function Main() {
-        return (
-          <section>
-            <p>
-              We serve the most delicious food
-              around
-            </p>
-          </section>
-        );
-      }
-      function App() {
-        return (
-          <div>
-            <Header />
+
+      function Main(){
+          return (
+            <section>
+              <p>
+                Khan is not Just a name but a Brand.
+                </p>
+              </section>
+          );
+        }
+
+        function App(){
+          return(
+            <div>
+              <Header />
             <Main />
-          </div>
-        );
-      }
+              </div>
+          );
+        }
 
       ReactDOM.render(
-        <App />,
+      //   <div>
+      //     <Header />
+      //     <Main />
+
+      // </div>,
+      <App/>,
         document.getElementById("root")
       );
+
     </script>
+
   </body>
 </html>
